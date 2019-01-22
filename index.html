@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <input type="file" class="file">
+            <input type="color" id="color-change">
+            <div class="pensil active"></div>
+            <div class="eraser"></div>
+            <div class="range">
+                <input type="range" min="1" max="50" value="5" step="1" class="line-size" name="input-range">
+                <label class="show-line-size" for="input-range">5</label>
+            </div>
+            <div class="back-changes"></div>
+            <div class="prew-changes"></div>
+            <button class="filter grayscale">Grayscale</button>
+            <button class="contrast filter">Threshold</button>
+            <button class="filter sepia">Sepia</button>
+            <button class="filter no-filter">No Filter</button>
+            <button class="save">Save</button>
+            <button class="load">Load</button>
+            <button class="clear-button">Clear</button>
+        </div>
+        <div class="canvas-container">
+            <canvas id="canvas" height="800" width="1400" class="pensil-cursor">not working</canvas>
+        </div>
+    </div>
+    <script src="js/filter.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/paint.js"></script>
+</body>
+
+</html>
